@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>TIBIA HUNTALYZER
+
+    <nav></nav>
+  </header>
+
+  <div id="page-wrap">
+    <section>
+      <div class="tibia-ui-wrap tibia-ui-big">
+        <div class="tibia-ui-title">Hunting Session</div>
+        <textarea class="tibia-window tibia-ui" id="dataInput">Session data: From 2020-08-10, 04:17:03 to 2020-08-10, 09:56:30
+        Session: 05:39h
+        XP Gain: 2,300,496
+        XP/h: 453,831
+        Loot: 1,317,786
+        Supplies: 112,776
+        Balance: 1,205,010
+        Damage: 2,764,660
+        Damage/h: 641,295
+        Healing: 188,700
+        Healing/h: 46,971
+        Killed Monsters:
+          2x death blob
+          217x ghastly dragon
+          289x lizard chosen
+        Looted items:
+          202x a great mana potion
+          70x a great health potion
+          14x terra legs
+          41x terra boots
+          40x a small diamond
+          538x a small emerald
+          257x a platinum coin
+          6x a tower shield
+          11x lizard leather
+          45x a soul orb
+          41x demonic essence
+          191x a great spirit potion
+          111x an ultimate health potion
+          39x a slightly rusted armor
+          3x a shiny stone
+          1x guardian boots
+          5x a Zaoan armor
+          1x a Zaoan helmet
+          4x Zaoan shoes
+          18x Zaoan legs
+          4x a drakinata
+          50x a spiked iron ball
+          19x a corrupted flag
+          34x cursed shoulder spikes
+          3x a spellweaver's robe
+          27x a ghastly dragon head
+          83x an undead heart
+          5x a jade hat
+          21x a scale of corruption
+        </textarea>
+      </div>
+    </section>
+
+    <section>
+      <div class="tibia-ui-wrap">
+        <select id="huntingplaces" class="tibia-ui tibia-button">
+          <option value="Hunting Places" class="tibia-ui">Hunting Places</option>
+        </select>
+      </div>
+
+      <div class="tibia-ui-wrap">
+        <button id="btn-calculate" class="tibia-ui tibia-button">
+          Analyze
+        </button>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <div class="tibia-ui-wrap tibia-ui-big">
+        <div id="xp/h" class="tibia-ui-title">XP/H</div>
+        <div class="tibia-ui tibia-window value-display">1,8kk</div>
+      </div>
+
+      <div class="tibia-ui-wrap tibia-ui-big">
+        <div id="profit/h" class="tibia-ui-title">Profit/H</div>
+        <div class="tibia-ui tibia-window value-display">1,8kk</div>
+      </div>
+
+      <div class="tibia-ui-wrap tibia-ui-big">
+        <div id="mxp/h" class="tibia-ui-title">Mean XP/H</div>
+        <div class="tibia-ui tibia-window value-display">1,8kk</div>
+      </div>
+
+      <div class="tibia-ui-wrap tibia-ui-big">
+        <div id="mprofit/h" class="tibia-ui-title">Mean Profit/H</div>
+        <div class="tibia-ui tibia-window value-display">1,8kk</div>
+      </div>
+    </section>
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
