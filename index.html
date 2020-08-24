@@ -15,6 +15,8 @@
   </header>
 
   <div id="page-wrap">
+
+    <form action="send_data.php" name="inputform" method="post"></form>
     <section>
       <div class="tibia-ui-wrap tibia-ui-big">
         <div class="tibia-ui-title">Hunting Session</div>
@@ -68,18 +70,28 @@
     </section>
 
     <section>
-      <div class="tibia-ui-wrap">
+      <div class="tibia-ui-wrap tibia-ui-big">
+        <div class="tibia-ui-title">Hunting Places</div>
         <select id="huntingplaces" class="tibia-ui tibia-button">
-          <option value="Hunting Places" class="tibia-ui">Hunting Places</option>
+        </select>
+      </div>
+
+      <div class="tibia-ui-wrap tibia-ui-big">
+        <div class="tibia-ui-title">Vocation</div>
+        <select id="vocation" class="tibia-ui tibia-button" style=width:100px>
+          <option value="none" style=display:none></option>
+          <option value="ED" class="tibia-ui">ED</option>
+          <option value="EK" class="tibia-ui">EK</option>
+          <option value="MS" class="tibia-ui">MS</option>
+          <option value="RP" class="tibia-ui">RP</option>
         </select>
       </div>
 
       <div class="tibia-ui-wrap">
-        <button id="btn-calculate" class="tibia-ui tibia-button">
-          Analyze
-        </button>
+        <input type="submit" value="Analyze" id="btn-calculate" class="tibia-ui tibia-button">  
       </div>
     </section>
+    </form>
 
     <hr>
 
